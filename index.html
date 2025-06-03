@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon dice</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/output.css">
 </head>
 
-<body>
-    <p id="estado"><!-- --></p>
-    <p>ronda <span id="ronda">0</span></p>
-    <button id="comenzar">Comenzar</button>
+<body class="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8 text-center">
 
-    <div class="color rojo" data-color="rojo"><!-- --></div>
-    <div class="color amarillo" data-color="amarillo"><!-- --></div>
-    <div class="color azul" data-color="azul"><!-- --></div>
-    <div class="color verde" data-color="verde"><!-- --></div>
+    <div class="mb-4">
+        <p class="text-lg font-semibold mb-1 text-gray-700" id="estado"><!-- --></p>
+        <p class="mb-2 text-gray-600">ronda <span class="font-bold" id="ronda">0</span></p>
+        <button class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition" id="comenzar">Comenzar</button>
+    </div>
 
+
+    <div class="columns-2 space-x-4 mx-auto">
+        <div class="color rojo aspect-square rounded shadow-md mb-4" data-color="rojo">&nbsp;</div>
+        <div class="color amarillo aspect-square rounded shadow-md mb-4" data-color="amarillo">&nbsp;</div>
+        <div class="color azul aspect-square rounded shadow-md mb-4" data-color="azul">&nbsp;</div>
+        <div class="color verde aspect-square rounded shadow-md mb-4" data-color="verde">&nbsp;</div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

@@ -1,8 +1,10 @@
+@import "tailwindcss";
+
 .color {
-    width: 100px;
-    height: 100px;
     opacity: 0.5;
     transition: opacity 0.5s;
+    height: 300px;
+    width: 700px;
 }
 
 .rojo {
